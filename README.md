@@ -10,3 +10,4 @@ This `Cards` will be modulable and from extensions placed into `extensions/`.
 + BootStrap: Manage columns and line
 + VueJS: Manage inside of `Cards`
 + Jquery: Manage `Cards`
++ [Material Design](https://getmdl.io) for `Cards`
