@@ -1,0 +1,24 @@
+{
+  "name": "Lunik-Torrent",
+  "homepage": "https://github.com/Lunik/Lunik-Torrent",
+  "authors": [
+    "gmartine <guillaume.martinez@cc.in2p3.fr>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "requirejs": "^2.2.0",
+    "font-awesome": "^4.6.3",
+    "notify.me": "^0.6.2",
+    "vue": "^1.0.26"
+  }
+}
