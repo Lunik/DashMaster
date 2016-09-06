@@ -1,0 +1,9 @@
+.DS_Store
+node_modules
+*log.txt
+npm-debug.log
+configs/*.json
+logs/log*
+bower_components/
+data/
+coverage/
