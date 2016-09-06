@@ -1,0 +1,23 @@
+notifications:
+  email: false
+language: node_js
+node_js:
+- '6'
+- '5'
+env:
+- PORT="5000"
+script:
+- npm test
+cache:
+  directories:
+  - $(pwd)/node_modules
+  - $(pwd)/src/public/src/bower_components
+after_success:
+- bash <(curl -s https://codecov.io/bash)
+deploy:
+  provider: npm
+  email: guillaume.lunik@gmail.com
+  on:
+    tags: true
+  api_key:
+    secure: DPgKUmiv548DPGCQ1hoIcQfjEQwUUQETsMltNHxUctVvw6U2Pa+bTW4CD0upW4/xHwUDiwBMp5qFeq0/3aKnaHxrrHWewuPibxyczOZa5RdbOGX9FPccbkzYGXx+5pb1sSWiyGA0+fOAkhooCDnJcDPgsTC3uAK6JUiAFXYzvvmv5xv3mEWrYXjsmhI4amYF7Oxdhq2C0ILDXawLo+9fRQt3F0Y/y/43iWBrB5cvdCduubfUrqrVpPlYgUkj/QTdxTwFr1cagv7kHiDuY75+kyLtFDVcnfDswhm9sdeM+cNkdAc8jqpBrqSCTgPGrpHGXDckcoPnFIjPobpelMlT+QxRzEaOGuzHu7bdJ1QQXc0pvDqmUfcQsQ38wzojNu1zqTlkfH14wuE6hJFXMYnIEYCo1zuKb+TqP1cvoWjx9vLfLs+KQDYNxljGbP3FlqVc1HIvWVMd49JnHi0K62/VO6/WPaNKfWH2rMIuen8T65AmUdJrbr1BOB4r44bLG3q+5XQZcWUKtIbDR9yAglRG2X4J2Q4DSCac7yLmdpJaBNEa+XQgMx/OpjtW/gNm+blVmrlx1H6OuIEVKNXMSbKpqwrPxdxuwcqAp2Jwv4KDnudoBjrodKYzKULH6feTYmM8vhTqLDxRbXDkC/E4//S7MeTZIjFOegw9LCnlJiGxdTY=
